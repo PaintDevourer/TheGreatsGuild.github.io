@@ -1,0 +1,411 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: fantasy;
+}
+
+body {
+    background-color: black;
+}
+
+.titleCard p {
+    font-size: 24px;
+}
+
+a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    min-width: 700px;
+}
+
+.introCard {
+    background: url("./DnD-Background.jpg");
+    background-size: cover;
+    height: 800px;
+    margin: 0 auto;
+    border-radius: 5%;
+    padding: 800px 1px;
+    max-width: 1400px;
+    padding: 0 10px;
+    text-align: center;
+    min-width: 700px;
+}
+
+h2 {
+    font-size: 28px;
+    color: white;
+    min-width: 20%;
+    max-width: 20%;
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: white 5px dotted;
+}
+
+.about {
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%);
+    height: 600px;
+    width: auto;
+    padding-top: 20px;
+    display: flex;
+}
+
+.aboutCard {
+    height: 500px;
+    border: solid white 2px;
+    width: 500px;
+    margin: 0 auto;
+    border-radius: 5%;
+    overflow: hidden;
+    position: relative;
+}
+
+#pricing {
+    background: white;
+}
+
+#pricing h2 {
+    color: black;
+    border-color: black;
+}
+
+.purchase {
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%);
+    height: 800px;
+    width: auto;
+    padding-top: 20px;
+    display: flex;
+}
+
+/* 📜 Stone Slab Styling */
+.price {
+    background: url('https://www.transparenttextures.com/patterns/rocky-wall.png'); /* Stone texture */
+    background-color: #807c74; /* Stone color */
+    border: 8px solid #5c5a52; /* Dark stone edges */
+    border-radius: 10px; /* Slightly rounded for realism */
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.5), 0 0 10px rgba(0, 0, 0, 0.3); /* Depth effect */
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    height: 500px;
+    width: 350px;
+    margin: 20px auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.price ul li {
+    font-family: 'Cinzel', serif;
+    color: #2e2c28;
+    text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.2), -2px -2px 0px rgba(0, 0, 0, 0.5); /* Carved stone effect */
+    position: relative;
+    top: 30px;
+    margin-top: 25px;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+/* 🔥 Glowing Runes Effect */
+.price .rune-text {
+    font-family: 'Uncial Antiqua', serif; /* Ancient-style font */
+    font-size: 24px;
+    color: #d4af37; /* Golden glow */
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.8), 0 0 20px rgba(255, 215, 0, 0.5); /* Glowing runes */
+    letter-spacing: 2px;
+    transition: text-shadow 0.3s ease-in-out;
+}
+
+.rune-text:hover {
+    text-shadow: 0 0 30px rgba(255, 215, 0, 1), 0 0 25px rgba(255, 215, 0, 0.8); /* Brighter glow on hover */
+}
+
+/* 🏛 Engraved Effect for Other Text */
+.price h3, .price p {
+    font-family: 'Cinzel', serif;
+    color: #2e2c28;
+    text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.2), -2px -2px 0px rgba(0, 0, 0, 0.5); /* Carved stone effect */
+}
+
+.purchaseFooter button {
+    background: #5c5a52; /* Dark stone color */
+    border: 3px solid #3b3a36; /* Slightly darker border */
+    color: #d4af37; /* Gold rune-like text */
+    font-family: 'Cinzel', serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: auto;
+    margin: 0 auto;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5); /* Engraved effect */
+    box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.6), inset -3px -3px 6px rgba(255, 255, 255, 0.2); /* Deep engraving */
+    transition: all 0.3s ease-in-out;
+    display: block;
+}
+
+.purchaseFooter button:hover {
+    background: #6d6a61;
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.8);
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.7);
+}
+
+.red {
+    background: rgb(226,18,18);
+    background: linear-gradient(315deg, rgba(226,18,18,1) 0%, rgba(255,176,176,1) 30%, rgba(128,0,0,1) 66%, rgba(0,0,0,1) 100%);
+}
+
+.green {
+    background: rgb(18,226,23);
+    background: linear-gradient(315deg, rgba(18,226,23,1) 0%, rgba(211,255,212,1) 30%, rgba(0,96,2,1) 66%, rgba(0,0,0,1) 100%);
+}
+
+.purple {
+    background: rgb(131,18,226);
+    background: linear-gradient(315deg, rgba(131,18,226,1) 0%, rgba(225,190,255,1) 30%, rgba(59,0,108,1) 66%, rgba(0,0,0,1) 100%);
+}
+
+.scalesImage {
+    height: 600px;
+    width: 500px;
+    background-image: url("./scales.jpg");
+    opacity: 0.8;
+    position: absolute;
+    z-index: 0;
+    transition: opacity 0.75s ease-out;
+}
+
+.aboutCard:hover > .scalesImage {
+    opacity: 0.25;
+    transition: opacity 0.75s ease-out;
+}
+
+.text {
+    position: relative;
+    display: block;
+    top: 30px;
+}
+
+.aboutCard button {
+    color: white;
+    position: relative;
+    display: block;
+    background: black;
+    border: 2px white solid;
+    font-size: 18px;
+    text-align: center;
+    width: auto;
+    padding: 10px 20px;
+    margin: 20% auto;
+    border-radius: 25%;
+    transition: color 0.5s, border 0.5s, padding 0.5s, font-size 0.5s, margin 0.5s;
+}
+
+/*
+.purchase button {
+    color: white;
+    position: relative;
+    display: block;
+    background: black;
+    border: 2px white solid;
+    font-size: 18px;
+    text-align: center;
+    width: auto;
+    padding: 10px 20px;
+    margin: 20% auto;
+    border-radius: 25%;
+    transition: padding 0.5s, font-size 0.5s, margin 0.5s;
+}
+*/
+
+.cardFooter {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+}
+
+.purchaseFooter {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+}
+
+.red button:hover {
+    color: red;
+    border: red 2px solid;
+    padding: 15px 30px;
+    font-size: 20px;
+    margin: 18.75% auto;
+    transition: color 0.5s, border 0.5s, padding 0.5s, font-size 0.5s, margin 0.5s;
+}
+
+.green button:hover {
+    color: greenyellow;
+    border: greenyellow 2px solid;
+    padding: 15px 30px;
+    font-size: 20px;
+    margin: 18.75% auto;
+    transition: color 0.5s, border 0.5s, padding 0.5s, font-size 0.5s, margin 0.5s;
+}
+
+.purple button:hover {
+    color: violet;
+    border: violet 2px solid;
+    padding: 15px 30px;
+    font-size: 20px;
+    margin: 18.75% auto;
+    transition: color 0.5s, border 0.5s, padding 0.5s, font-size 0.5s, margin 0.5s;
+}
+
+/*
+.purchase button:hover {
+    padding: 15px 30px;
+    font-size: 20px;
+    margin: 18.75% auto;
+    transition: padding 0.5s, font-size 0.5s, margin 0.5s;
+}
+*/
+
+.text p {
+    padding-top: 30px;
+    width: 75%;
+    font-size: 22px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h3 {
+    font-size: 26px;
+    width: 200;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.titleCard {
+    padding: 20px 30px;
+    background-color: black;
+    position: relative;
+    top: 100px;
+    width: 0;
+    margin: 0 auto;
+    opacity: 80%;
+    border-radius: 5%;
+    border: white 2px solid;
+    min-width: 700px;
+}
+
+header nav {
+    border-bottom: white solid 2px;
+    min-width: 700px;
+    max-width: 100%;
+    height: 40px;
+    padding-top: 20px;
+    overflow: hidden;
+    background-color: black;
+}
+
+nav ul {
+    text-align: center;
+    margin: auto;
+}
+
+header li {
+    display: inline;
+    padding: 40px 40px;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0 auto;
+}
+
+nav li:hover {
+    background-color: white;
+    color: black;
+}
+
+#pricingTag {
+    background-color: white;
+    color: black;
+    transition: color 0.5s;
+}
+
+.crazy {
+    font-family: Chalkduster, fantasy;
+    color: red;
+    text-transform: uppercase;
+}
+
+.purple .crazy {
+    color: violet;
+}
+
+.textFancy {
+    font-family: Luminari, fantasy;
+}
+
+#pricingTag:hover {
+    color: red;
+    transition: color 0.2s;
+}
+
+.stone-footer {
+    background: url('https://www.transparenttextures.com/patterns/dark-stone.png'); /* Stone texture */
+    color: #d4af37; /* Golden text */
+    text-align: center;
+    padding: 20px;
+    border-top: 6px solid #5c3a1a; /* Dark border for depth */
+    position: relative;
+}
+
+.footer-quote {
+    font-style: italic;
+    font-family: 'Uncial Antiqua', cursive; /* Fantasy-style font */
+    font-size: 18px;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+}
+
+.footer-nav a {
+    color: #d4af37;
+    font-size: 16px;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+    color: #ffcc00; /* Bright gold glow on hover */
+    text-shadow: 0 0 8px #ffcc00;
+}
+
+.footer-text {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* 🕯️ Flickering Torch Animation */
+@keyframes flicker {
+    0% { text-shadow: 0 0 10px #ff8c00; }
+    50% { text-shadow: 0 0 15px #ff4500; }
+    100% { text-shadow: 0 0 10px #ff8c00; }
+}
+
+.footer-quote {
+    animation: flicker 1.5s infinite alternate;
+}
+
+img {
+    position: absolute;
+    width: 177px;
+    height: 100px;
+    right: 30px;
+    bottom: 20px;
+    z-index: 1;
+    object-fit: contain;
+}
