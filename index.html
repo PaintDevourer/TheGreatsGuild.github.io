@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="./DnD.css" rel="stylesheet">
+        <title>The Ultimate Dungeon Master</title>
+    </head>
+    <body>
+
+        <!-- Header that follows the camera -->
+        <header>
+            <nav>
+                <ul>
+                    <a href="#home"><li>Home</li></a>
+                    <a href="#about"><li>About</li></a>
+                    <a href="#pricing"><li id="pricingTag" class="textFancy">Pricing</li></a>
+                    <a href="#contact"><li>Contact</li></a>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main part of the page with the big monster background -->
+        <main>
+            <div id="home" class="introCard">
+                <div class="titleCard">
+                    <h1>Your <span class="crazy">ultimate</span> guide through the Forgotten Realms!</h1>
+                    <p>Prepare for the craziest adventure of your life!</p>
+                </div>
+            </div>
+
+            <!-- The cards for each of the services -->
+            <br id="about">
+            <h2>About our services:</h2>
+            <div class="about">
+
+                <!-- The card backgrounds use gradients, here's a website if you wanna make some yourself: https://cssgradient.io/ -->
+                <!-- Basic card layout:
+
+                    A div with "aboutCard" and the proper color
+                        Empty div with class "scalesImage"
+                        Div with class "text"
+                            h3 header and p as the children of "text"
+                        div with "cardFooter" class
+                            a button with "Learn more" inside as the text
+                    
+                -->
+                <!-- Red card -->
+                <div class="aboutCard red">
+                    <div class="scalesImage"></div>
+                    <div class="text">
+                        <h3>Teaching the Art of Adventure</h3>
+                        <p>Your first time playing? Fear not! You will learn everything from the basics of creating a character, to the monsters and world building of Dunegons and Dragons, and how to roleplay in this wild world as an amazing hero or devilish villain!</p>
+                    </div>
+                    <div class="cardFooter">
+                        <button>Learn more</button>
+                    </div>
+                </div>
+                
+                <!-- Green card -->
+                <div class="aboutCard green">
+                    <div class="scalesImage"></div>
+                    <div class="text">
+                        <h3>Your Ultimate Dungeon Master</h3>
+                        <p>Need an expert guide through the Forgetten Realms? Talk to one of our dedicated, professional <span class="textFancy">dungeon masters</span> and embark on an epic journey today!</p>
+                    </div>
+                    <div class="cardFooter">
+                        <button>Learn more</button>
+                    </div>
+                </div>
+
+                <!-- Purple card -->
+                <div class="aboutCard purple">
+                    <div class="scalesImage"></div>
+                    <div class="text">
+                        <h3>Become the Dungeon Master</h3>
+                        <p>Decided you want to become the guide through the realms? Our team of experts have created dozens of lessons to teach you how to become the <span class="crazy">ultimate</span> dungeon master yourself!</p>
+                    </div>
+                    <div class="cardFooter">
+                        <button>Learn more</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add some pricing tags, a new website for pricing, and/or a footer below here, make sure to add the "pricing" and/or "contact" ids -->
+            <!-- The is also an image I've left for the footer or header if you'd like, called "Dnd-Symbol"-->
+
+            <!-- Service 1: Just learning to play
+            Service 2: Get a Dungeon Master
+            Service 3: Learn to be a Dungeon Master
+            Service 4: Learn to play + Dungeon Master (20% off) -->
+            
+            <div id="pricing">
+                <h2>Invest in your adventures:</h2>
+                <div class="purchase">
+                    <!-- Learn To Play -->
+                    <div class="price">
+                        <div class="text">
+                            <h3>Learn To Play</h3>
+                            <p class="rune-text">$49 per lesson</p>
+                            <ul>
+                                <li>Learn whatever you want</li>
+                                <li>Bring up to 5 people to learn per lesson</li>
+                                <li>Permanently get 20% off when you purchase a Dungeon Master or another lesson</li>
+                            </ul>
+                        </div>
+                        <div class="purchaseFooter">
+                            <button>Learn More</button>
+                        </div>
+                    </div>
+
+                    <!-- Purchase Card 2 -->
+                    <div class="price">
+                        <div class="text">
+                            <h3>Get A Dungeon Master</h3>
+                            <p class="rune-text">$120 per session</p>
+                            <ul>
+                                <li>Each session is 4 hours in length</li>
+                                <li>Session zeros are free</li>
+                                <li>Play any campaign you desire</li>
+                            </ul>
+                        </div>
+                        <div class="purchaseFooter">
+                            <button>Learn More</button>
+                        </div>
+                    </div>
+
+                    <!-- Purchase Card 3 -->
+                    <div class="price">
+                        <div class="text">
+                            <h3>Become A Dungeon Master</h3>
+                            <p class="rune-text">$59 per lesson</p>
+                            <ul>
+                                <li>Learn the ins and outs of how to be a dungeon master</li>
+                                <li>Create your own campaign world</li>
+                                <li>Become an expert of the D&D world</li>
+                            </ul>
+                        </div>
+                        <div class="purchaseFooter">
+                            <button>Learn More</button>
+                        </div>
+                    </div>
+
+                    <!-- Ultimate deal card -->
+                    <div class="price">
+                        <div class="text">
+                            <h3>Become A True Aventurer (Bundle)</h3>
+                            <p class="rune-text">$480</p>
+                            <ul>
+                                <li>5 lessons/practice sessions of your choosing</li>
+                                <li>5 Dungeon Master sessions to play a short campaign</li>
+                                <li>With all previous deals plus an extra 30% off</li>
+                            </ul>
+                        </div>
+                        <div class="purchaseFooter">
+                            <button>Learn More</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <footer class="stone-footer">
+                <div class="footer-content">
+                    <p class="footer-quote">"The dice giveth and the dice taketh away..."</p>
+                    
+                    <nav class="footer-nav">
+                        <a href="#home">🏰 Home</a>
+                        <a href="#about">⚔ About</a>
+                        <a href="#pricing">💰 Pricing</a>
+                        <a href="#contact">📜 Contact</a>
+                    </nav>
+
+                    <div id="contact">
+                        <p class="footer-text">Email: TheGreatsGuildOfficial@gmail.com | Phone: +1 (374) 284-4725 | Address: 1201 N Muldoon Rd, Calebtown California, 99504</p>
+                    </div>
+                    <p class="footer-text">© 2025 The Great's Guild | All Rights Reserved</p>
+                    <img src="./DnD-Symbol.png">
+                </div>
+            </footer>
+            
+        </main>
+    </body>
+</html>
